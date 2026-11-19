@@ -1,0 +1,180 @@
+
+/* Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+header p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #bfdbfe;
+}
+
+/* Navigation */
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: #172554;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+/* Main content */
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #172554;
+    font-size: 26px;
+    border-bottom: 3px solid #3b82f6;
+    padding-bottom: 8px;
+}
+
+section h3 {
+    color: #2563eb;
+}
+
+/* Skills */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+}
+
+a:hover {
+    color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+/* Dark Mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.dark-mode section h2 {
+    color: #93c5fd;
+}
+
+.dark-mode nav {
+    background-color: #1e1e1e;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+/* Project Cards */
+
+#projectsContainer > div {
+    background-color: #f4f7fb;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-left: 4px solid #3b82f6;
+}
+
+.dark-mode #projectsContainer > div {
+    background-color: #292929;
+}
+
+/* Print Styling */
+
+@media print {
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    header {
+        background-color: white;
+        color: black;
+    }
+
+    nav,
+    button,
+    footer {
+        display: none;
+    }
+
+    section {
+        box-shadow: none;
+        border: 1px solid #ccc;
+        page-break-inside: avoid;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .dark-mode {
+        background-color: white;
+        color: black;
+    }
+
+    .dark-mode section {
+        background-color: white;
+        color: black;
+    }
+
+}
